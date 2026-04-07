@@ -6,24 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="">
-        <label for="Nama">Nama</label>
-        <input type="text" name="Nama" id="Nama"><br>
-        <label for="Tmp_Lahir">Tempat Lahir</label>
-        <input type="text" name="Tmp_Lahir" id="Tmp_Lahir"><br>
+    <form action="" method="Post">
+        <input value="Fany" placeholder="Nama" type="text" Nama="Nama" id="Nama"><br>
+        <input value="Dharmasraya" placeholder="Tempat Lahir" name="Tmp_Lahir" id="Tmp_Lahir"><br>
         <label for="Tanggal Lahir"></label>
-        <input type="date" name="Tgl_Lahir" id="Tgl_Lahir"><br>
-        <label for="Jk">Jenis Kelamin</label>
-        <input type="radio" name="Jk" id="Jk">
-        <input type="radio" name="Jk" id="Jk">
-        <!--
-        <select name="Jk" id="Jk">
-            <option value="L">Laki-Laki</option>
-            <option value="P">Perempuan</option>
+        <input value="2026-04-01" placeholder="Tanggal Lahir" type="date" name="Tgl_Lahir" id="Tgl_Lahir"><br>
+        <label>Jenis Kelamin</label>
+        <input value="L" type="radio" name="jk" id="L" checked><label for="L">Laki-Laki</label>
+        <input value="P" type="radio" name="jk" id="P" checked><label for="L">Perempuan</label>
+        
+        <select name="jk" id="jk">
+            <option value="">Pilih Jenis Kelamin</option>
+            <option value="L">selected>Laki-Laki</option>
+            <option value="P">selected>Perempuan</option>
         </select>
+        <input type="password" name="" id="">
         <input type="submit">
 
-    </form>
+        <input type="file" name="pasfoto" id="">
+        <textarea name="deskrpsi" id=""></textarea>
+        <input type="submit">
+</form>
 </body>
 </html>
 
