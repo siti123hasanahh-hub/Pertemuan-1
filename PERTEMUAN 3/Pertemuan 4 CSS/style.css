@@ -1,0 +1,13 @@
+div{
+    background-color: aqua;
+    border: 1px dotted wheat;
+    border-radius: 10px 20px;
+    padding: 25px;
+    margin: 25px;
+}
+p{
+    color: brown;
+}
+relative{
+    positif: relative;
+}
