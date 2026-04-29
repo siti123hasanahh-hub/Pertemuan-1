@@ -5,34 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout</title>
     <style>
-        ul.sidebar-menu{
-            list-style: none;
-            padding: 0;
-        }
+        :root {
+    --primary-color: #90a594;
+    --text-color: #ffffff;
+    --hover-color: #dddddd;
+}
 
-        ul.sidebar-menu a {
-            display: block;
-            height: 40px;
-            background-color: rgb(3, 70, 70);
-            border-bottom: 1px solid rgb(117, 107, 107);
-            padding: 20px 10px 0;
-            color: aliceblue;
-        }
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
 
-        a {
-            text-decoration: none;
-        }
-        aside {
-            width: 250px;
-            background-color: rgb(162, 205, 207);
-            padding-top: 20px;
-            padding: 20px 20px;
-        }
+/* Sidebar */
+aside {
+    width: 250px;
+    background-color: var(--primary-color);
+    padding: 20px;
+    height: 100vh;
+}
 
-        .profile-image,
-        .user-name {
-            text-align: center;
-        }
+/* Menu */
+ul.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+ul.sidebar-menu li {
+    margin-bottom: 5px;
+}
+
+ul.sidebar-menu a {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: rgb(6, 83, 12);
+    border-bottom: 1px solid rgb(117, 107, 107);
+    padding: 10px;
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+/* Hover effect */
+ul.sidebar-menu a:hover {
+    background-color: var(--hover-color);
+    color: #000;
+}
+
+/* Icon animasi */
+ul.sidebar-menu a i {
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+ul.sidebar-menu a:hover i {
+    transform: rotateY(180deg);
+}
+
+/* Link default */
+a {
+    text-decoration: none;
+}
+
+/* Profile */
+.profile-image,
+.user-name {
+    text-align: center;
+    color: var(--text-color);
+}
 
     </style>
 </head>
