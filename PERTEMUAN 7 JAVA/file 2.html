@@ -1,0 +1,73 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            margin: 10px auto;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        #demo {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #007BFF;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            background: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>JavaScript HTML DOM</h2>
+
+    <div class="box">
+        <p class="paragraf">Paragraf pertama</p>
+        <p class="paragraf">Paragraf kedua</p>
+
+        <button onclick="tampilkan()">Tampilkan Paragraf Pertama</button>
+
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        function tampilkan() {
+            const paragraf = document.getElementsByClassName("paragraf");
+            const hasil = document.getElementById("demo");
+
+            hasil.textContent = paragraf[0].textContent;
+        }
+    </script>
+
+</body>
+</html>
